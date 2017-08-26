@@ -1,0 +1,4 @@
+D:\Work\CtrBoard\Cam\USBCamControl\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Webcam.dll
+D:\Work\CtrBoard\Cam\USBCamControl\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Webcam.pdb
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\Webcam\obj\Debug\Webcam.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\Webcam\obj\Debug\Webcam.pdb

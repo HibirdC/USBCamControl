@@ -1,0 +1,13 @@
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\TestWebCam.exe
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\TestWebCam.pdb
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.Video.DirectShow.dll
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.Video.dll
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.dll
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.Video.DirectShow.xml
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.Video.xml
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\bin\Debug\AForge.xml
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\obj\x86\Debug\TestWebCam.Properties.Resources.resources
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\obj\x86\Debug\TestWebCam.csproj.GenerateResource.Cache
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\obj\x86\Debug\TestWebCam.exe
+D:\Work\CtrBoard\Cam\USBCamControl\TestWebCam\TestWebCam\obj\x86\Debug\TestWebCam.pdb
