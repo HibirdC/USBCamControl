@@ -1,7 +1,7 @@
 D:\Work\CtrBoard\Cam\USBCamControl\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Webcam.dll
 D:\Work\CtrBoard\Cam\USBCamControl\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Webcam.pdb
-D:\Work\CtrBoard\Cam\USBCamControl\Webcam\Webcam\obj\Debug\Webcam.dll
-D:\Work\CtrBoard\Cam\USBCamControl\Webcam\Webcam\obj\Debug\Webcam.pdb
+D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Debug\webCam.dll.config
 D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Debug\webCam.dll
 D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Debug\webCam.pdb
-D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\obj\Debug\webCam.csprojResolveAssemblyReference.cache
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\obj\Debug\webCam.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\obj\Debug\webCam.pdb

@@ -10,7 +10,7 @@ using AForge.Video.DirectShow;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Webcam
+namespace webCam
 {
     public class webCamHelper
     {
@@ -114,7 +114,7 @@ namespace Webcam
         ///--Zoom the pic
         private Bitmap Zoom(ref Bitmap bitmap, int new_Width, int new_Height)
         {
-            Bitmap newBitmap = new Bitmap(new_Width, new_Width);
+            Bitmap newBitmap = new Bitmap(new_Width, new_Height);
             Graphics newGra= Graphics.FromImage(newBitmap);
             ///--set quality
             newGra.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;

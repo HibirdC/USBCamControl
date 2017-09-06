@@ -44,9 +44,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Webcam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Webcam.dll</HintPath>
+    <Reference Include="webCam">
+      <HintPath>..\..\..\..\CtrBoard\CtrBoard\bin\Release\webCam.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,14 @@
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\webCam.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\webCam.pdb
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.Video.DirectShow.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.Video.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.Video.xml
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.Video.DirectShow.xml
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\AForge.xml
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\obj\Release\webCam.dll
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\obj\Release\webCam.pdb
+D:\Work\CtrBoard\Cam\USBCamControl\Webcam\webCam\bin\Release\webCam.dll.config
+D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Release\webCam.dll.config
+D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Release\webCam.dll
+D:\Work\CtrBoard\CtrBoard\CtrBoard\bin\Release\webCam.pdb
