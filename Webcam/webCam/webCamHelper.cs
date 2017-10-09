@@ -41,7 +41,13 @@ namespace webCam
             ///---Get device list
             foreach (FilterInfo item in videoDevices)
             {
-                dic.Add(item.Name,item.MonikerString);
+                string name = item.Name;
+                int count = dic.Count(p=>p.Key == name);
+                if(count >0)
+                {
+                    name = name + "#" + (count+1);
+                }
+                dic.Add(name, item.MonikerString);
             }
             return videoDevices.Count;
         }
