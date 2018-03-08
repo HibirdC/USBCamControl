@@ -38,7 +38,8 @@ namespace webCam
             if (this.pictureBox.InvokeRequired)
             {
                 DelegateUpdateImage img = new DelegateUpdateImage(UpdateImage);
-                this.pictureBox.Invoke(img, image); //通过代理调用刷新方法
+                this.pictureBox.BeginInvoke(img, image); //通过代理调用刷新方法
+                Console.WriteLine("UpdateImage");
             }
             else
             {
