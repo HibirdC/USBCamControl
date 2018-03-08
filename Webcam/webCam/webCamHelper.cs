@@ -30,7 +30,6 @@ namespace webCam
         {
             this.pic_Height = newHeight;
             this.pic_Width = newWidth;
-            this.pictureBox = new PictureBox();
             this.pictureBox = pictureBox;
         }
         private void UpdateImage(Bitmap image)
@@ -38,8 +37,7 @@ namespace webCam
             if (this.pictureBox.InvokeRequired)
             {
                 DelegateUpdateImage img = new DelegateUpdateImage(UpdateImage);
-                this.pictureBox.BeginInvoke(img, image); //通过代理调用刷新方法
-                Console.WriteLine("UpdateImage");
+                this.pictureBox.Invoke(img, image); //通过代理调用刷新方法
             }
             else
             {
