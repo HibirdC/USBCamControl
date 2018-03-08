@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 ///---
 using AForge.Video;
 using AForge.Video.DirectShow;
@@ -21,6 +20,8 @@ namespace webCam
         private int pic_Height;      ///---picture height
         private PictureBox pictureBox;  ///--preview the image
         private Bitmap bitmap;          ///--save capture
+                                        ///
+        private delegate void DelegateUpdateImage(Bitmap image); //代理委托
         #endregion
 
         #region
@@ -31,6 +32,18 @@ namespace webCam
             this.pic_Width = newWidth;
             this.pictureBox = new PictureBox();
             this.pictureBox = pictureBox;
+        }
+        private void UpdateImage(Bitmap image)
+        {
+            if (this.pictureBox.InvokeRequired)
+            {
+                DelegateUpdateImage img = new DelegateUpdateImage(UpdateImage);
+                this.pictureBox.Invoke(img, image); //通过代理调用刷新方法
+            }
+            else
+            {
+                this.pictureBox.Image = image;
+            }
         }
         /*
          * Get device list
@@ -99,7 +112,7 @@ namespace webCam
         private void WebcamNewFrameCallBack(object obj, NewFrameEventArgs eventArgs)
         {
             bitmap = (Bitmap)eventArgs.Frame.Clone();
-            this.pictureBox.Image = bitmap;
+            UpdateImage(bitmap);
             GC.Collect();
         }
 
