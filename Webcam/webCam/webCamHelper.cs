@@ -34,15 +34,10 @@ namespace webCam
         }
         private void UpdateImage(Bitmap image)
         {
-            if (this.pictureBox.InvokeRequired)
-            {
-                DelegateUpdateImage img = new DelegateUpdateImage(UpdateImage);
-                this.pictureBox.Invoke(img, image); //通过代理调用刷新方法
-            }
-            else
+            this.pictureBox.Invoke(new EventHandler(delegate
             {
                 this.pictureBox.Image = image;
-            }
+            }));
         }
         /*
          * Get device list
@@ -150,7 +145,8 @@ namespace webCam
             {
                 if (this.WebCam.IsRunning)
                 {
-                    this.WebCam.Stop();
+                    this.WebCam.SignalToStop();
+                    this.WebCam.WaitForStop();
                 }
             }
         }
