@@ -19,14 +19,12 @@ namespace webCam
         private int pic_Width;       ///--picture width
         private int pic_Height;      ///---picture height
         private PictureBox pictureBox;  ///--preview the image
-        private Bitmap bitmap;          ///--save capture
-                                        ///
-        private delegate void DelegateUpdateImage(Bitmap image); //代理委托
+        private Bitmap bitmap;          ///--save capture         
         #endregion
 
         #region
 
-        public webCamHelper(ref PictureBox pictureBox,int newWidth, int newHeight)
+        public webCamHelper(PictureBox pictureBox,int newWidth, int newHeight)
         {
             this.pic_Height = newHeight;
             this.pic_Width = newWidth;
