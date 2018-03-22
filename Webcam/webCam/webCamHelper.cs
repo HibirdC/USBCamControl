@@ -8,6 +8,7 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace webCam
 {
@@ -19,12 +20,14 @@ namespace webCam
         private int pic_Width;       ///--picture width
         private int pic_Height;      ///---picture height
         private PictureBox pictureBox;  ///--preview the image
-        private Bitmap bitmap;          ///--save capture         
+        private Bitmap bitmap;          ///--save capture      
+                                        ///
+        private delegate void InvokeCallback(Bitmap context);
         #endregion
 
         #region
 
-        public webCamHelper(PictureBox pictureBox,int newWidth, int newHeight)
+        public webCamHelper(ref PictureBox pictureBox,int newWidth, int newHeight)
         {
             this.pic_Height = newHeight;
             this.pic_Width = newWidth;
@@ -32,10 +35,15 @@ namespace webCam
         }
         private void UpdateImage(Bitmap image)
         {
-            this.pictureBox.Invoke(new EventHandler(delegate
+            if (this.pictureBox.InvokeRequired)
+            {
+                InvokeCallback imgCallback = new InvokeCallback(UpdateImage);
+                this.pictureBox.Invoke(imgCallback, new object[] { image });
+            }
+            else
             {
                 this.pictureBox.Image = image;
-            }));
+            } 
         }
         /*
          * Get device list
@@ -104,6 +112,7 @@ namespace webCam
         private void WebcamNewFrameCallBack(object obj, NewFrameEventArgs eventArgs)
         {
             bitmap = (Bitmap)eventArgs.Frame.Clone();
+            Thread.Sleep(100);
             UpdateImage(bitmap);
             GC.Collect();
         }
